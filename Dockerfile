@@ -6,3 +6,10 @@ RUN apt update && \
        git clone https://github.com/Mallaparao/spring-petclinic.git
 RUN cd spring-petclinic && \
         mvn package
+
+# jar: /spring-petclinic/target/spring-petclinic-3.0.0-SNAPSHOT.jar
+
+FROM opendjk:17
+RUN add /spring-petclinic/target/spring-petclinic-3.0.0-SNAPSHOT.jar /spring-petclinic
+EXPOSE 8080
+CMD [ "java", "-jar", "/spring-petclinic-3.0.0-SNAPSHOT.jar"]
