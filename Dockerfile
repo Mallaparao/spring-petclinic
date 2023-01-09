@@ -5,4 +5,4 @@ RUN apt update && \
        apt install maven -y && \
        git clone https://github.com/Mallaparao/spring-petclinic.git
 RUN cd spring-petclinic && \
-        mvn clean package
+        mvn package
