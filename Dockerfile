@@ -5,7 +5,7 @@ RUN apt update && \
        apt install maven -y && \
        git clone https://github.com/Mallaparao/spring-petclinic.git
 RUN cd spring-petclinic && \
-        mvn package
+        mvnw package
 
 
 # jar: /spring-petclinic/target/spring-petclinic-3.0.0-SNAPSHOT.jar
