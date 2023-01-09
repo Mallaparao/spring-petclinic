@@ -10,7 +10,7 @@ RUN cd spring-petclinic && \
 
 # jar: /spring-petclinic/target/spring-petclinic-3.0.0-SNAPSHOT.jar
 
-FROM opendjk:17
-RUN target/spring-petclinic-3.0.0-SNAPSHOT.jar /spring-petclinic
-EXPOSE 8080
-CMD [ "java", "-jar", "/spring-petclinic-3.0.0-SNAPSHOT.jar"]
+#FROM opendjk:17
+#RUN target/spring-petclinic-3.0.0-SNAPSHOT.jar /spring-petclinic
+#EXPOSE 8080
+#CMD [ "java", "-jar", "/spring-petclinic-3.0.0-SNAPSHOT.jar"]
